@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chaitanya Puchalapalli · Soulive Media — Content & Growth Portfolio</title>
+<meta name="description" content="Chaitanya Puchalapalli, founder of Soulive Media — content strategy, video, Meta ads, websites and automation. Brands grown from zero: 20K, 8.5K, 4.5K followers and a YouTube channel taken from 40K to 240K+.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c1020; --bg2:#121830; --card:#161d38; --line:rgba(255,255,255,.09);
+  --text:#e9ecf6; --muted:#9aa3c0;
+  --pink:#F5989D; --blue:#6DCFF6; --green:#A3D39C;
+  --grad:linear-gradient(100deg,var(--pink),var(--blue) 55%,var(--green));
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4,.display{font-family:Outfit,Inter,sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+.eyebrow{font-family:Outfit;font-weight:600;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px;display:inline-block}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;margin-bottom:16px}
+.lead{color:var(--muted);max-width:640px;font-size:1.05rem}
+.gtext{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(12,16,32,.72);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Outfit;font-weight:700;font-size:1.15rem}
+.links{display:flex;gap:26px;font-size:.92rem;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-family:Outfit;font-weight:600;font-size:.98rem;border:1px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--grad);color:#0c1020;box-shadow:0 8px 30px -8px rgba(109,207,246,.55)}
+.btn.ghost{border-color:var(--line);background:rgba(255,255,255,.04)}
+.btn.sm{padding:9px 18px;font-size:.88rem}
+@media(max-width:760px){.links{display:none}}
+
+/* hero */
+.hero{padding:70px 0 40px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;font-size:.84rem;color:var(--muted);background:rgba(255,255,255,.03);margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(163,211,156,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(163,211,156,0)}100%{box-shadow:0 0 0 0 rgba(163,211,156,0)}}
+.hero h1{font-size:clamp(2.6rem,6.6vw,5rem);font-weight:800;margin-bottom:22px}
+.hero p.sub{font-size:1.15rem;color:var(--muted);max-width:560px;margin-bottom:32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-card{position:relative;background:linear-gradient(160deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:28px;padding:28px;min-height:360px;overflow:hidden}
+.hero-card::before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 30% 20%,rgba(245,152,157,.25),transparent 40%),radial-gradient(circle at 80% 70%,rgba(109,207,246,.22),transparent 40%);}
+.hero-card>*{position:relative}
+.hc-top{display:flex;justify-content:space-between;font-family:Outfit;color:var(--muted);font-size:.85rem;margin-bottom:6px}
+.big{font-family:Outfit;font-weight:800;font-size:3.3rem}
+.chip{position:absolute;padding:9px 14px;border-radius:14px;background:rgba(12,16,32,.82);border:1px solid var(--line);font-family:Outfit;font-weight:600;font-size:.88rem;backdrop-filter:blur(8px);animation:float 6s ease-in-out infinite}
+.chip b{color:var(--green)}
+.chip.c1{right:18px;bottom:96px}.chip.c2{left:18px;bottom:24px;animation-delay:-2s}.chip.c3{right:30px;bottom:24px;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}}
+
+/* trust strip */
+.strip{padding:28px 0;border-block:1px solid var(--line);background:rgba(255,255,255,.02)}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.strip .n{font-family:Outfit;font-weight:800;font-size:clamp(1.9rem,4vw,2.8rem)}
+.strip .l{color:var(--muted);font-size:.88rem}
+.strip-grid>div:nth-child(1) .n{color:var(--pink)}.strip-grid>div:nth-child(2) .n{color:var(--blue)}.strip-grid>div:nth-child(3) .n{color:var(--green)}.strip-grid>div:nth-child(4) .n{color:var(--pink)}
+@media(max-width:700px){.strip-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* growth cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:22px;margin-top:44px}
+.gc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;position:relative;overflow:hidden;transition:transform .25s,border-color .25s}
+.gc:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.2)}
+.gc::after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;background:var(--accent);opacity:.12;filter:blur(10px)}
+.gc.wide{grid-column:1/-1}
+.tag{display:inline-block;font-size:.74rem;padding:4px 11px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:0 6px 6px 0}
+.gc .platform{font-family:Outfit;font-size:.82rem;color:var(--accent);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.gc h3{font-size:1.5rem;margin:6px 0 4px}
+.gc .niche{color:var(--muted);font-size:.92rem;margin-bottom:20px}
+.track{height:12px;border-radius:999px;background:rgba(255,255,255,.07);overflow:hidden;margin:6px 0 10px}
+.fill{height:100%;width:0;border-radius:999px;background:var(--accent);transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.fromto{display:flex;justify-content:space-between;align-items:baseline;font-family:Outfit}
+.fromto .a{color:var(--muted)}
+.fromto .b{font-size:2.3rem;font-weight:800;color:var(--accent)}
+.kv{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 14px}
+.kv div{flex:1;min-width:120px;padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.kv b{display:block;font-family:Outfit;font-size:1.15rem;color:var(--text)}
+.kv span{font-size:.78rem;color:var(--muted)}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--green)}
+
+/* experience */
+.exp{background:var(--bg2)}
+.tl{position:relative;margin-top:44px;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--pink),var(--blue),var(--green))}
+.tl-item{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px 26px;margin-bottom:18px}
+.tl-item::before{content:"";position:absolute;left:-33px;top:28px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--c,var(--blue))}
+.tl-item .when{font-family:Outfit;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--c,var(--blue));font-weight:600}
+.tl-item h3{font-size:1.3rem;margin:4px 0 2px}
+.tl-item .org{color:var(--muted);font-size:.95rem;margin-bottom:10px}
+.tl-item ul{list-style:none;color:#c7cde2;font-size:.95rem}
+.tl-item li{padding-left:18px;position:relative;margin:4px 0}
+.tl-item li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:7px;border-radius:50%;background:var(--c,var(--blue))}
+
+/* work gallery */
+.tabs{display:flex;gap:10px;margin:34px 0 26px;flex-wrap:wrap}
+.tab{padding:10px 22px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);font-family:Outfit;font-weight:600;cursor:pointer;font-size:.95rem}
+.tab[aria-selected="true"]{background:var(--grad);color:#0c1020;border-color:transparent}
+.grid{display:grid;gap:20px}
+.grid.reels{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.grid.posts{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.grid.arts{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.work{display:block;position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--card);transition:transform .25s}
+.work:hover{transform:translateY(-6px) rotate(-.4deg)}
+.cover{position:relative;aspect-ratio:9/16;display:grid;place-items:center;overflow:hidden}
+.posts .cover{aspect-ratio:1/1}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover .t{position:relative;text-align:center;padding:18px;font-family:Outfit;font-weight:800;font-size:1.5rem;color:#0c1020;line-height:1.05}
+.play{position:absolute;right:12px;bottom:12px;width:46px;height:46px;border-radius:50%;background:rgba(12,16,32,.78);display:grid;place-items:center;backdrop-filter:blur(6px);transition:transform .2s}
+.work:hover .play{transform:scale(1.15)}
+.meta{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;font-size:.86rem}
+.meta span{color:var(--muted)}
+.meta b{font-family:Outfit;font-weight:600}
+.badge{position:absolute;left:12px;top:12px;font-size:.7rem;font-weight:700;font-family:Outfit;padding:4px 10px;border-radius:999px;background:rgba(12,16,32,.8);letter-spacing:.06em}
+.art{padding:22px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);position:relative;overflow:hidden}
+.art .n{font-family:Outfit;font-size:2.4rem;font-weight:800;opacity:.9}
+.art h4{font-size:1.08rem;margin:6px 0 10px;font-weight:600;letter-spacing:-.01em}
+.art small{color:var(--muted)}
+.note{margin-top:22px;color:var(--muted);font-size:.9rem}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px;margin-top:44px}
+.sv{padding:26px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);transition:transform .25s,border-color .25s}
+.sv:hover{transform:translateY(-5px);border-color:var(--c)}
+.ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 18%,transparent);margin-bottom:16px}
+.sv h3{font-size:1.2rem;margin-bottom:8px}
+.sv p{color:var(--muted);font-size:.93rem}
+
+/* process */
+.proc{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:40px;counter-reset:s}
+.st{padding:24px;border-radius:var(--r);border:1px dashed rgba(255,255,255,.18);position:relative}
+.st::before{counter-increment:s;content:"0" counter(s);font-family:Outfit;font-weight:800;font-size:2.2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:6px}
+.st h4{font-size:1.1rem;margin-bottom:6px}
+.st p{color:var(--muted);font-size:.9rem}
+
+/* zero-to-one */
+.zero{text-align:center;padding:110px 0}
+.zero .display{font-size:clamp(4rem,14vw,10rem);font-weight:800}
+.zero p{color:var(--muted);max-width:520px;margin:10px auto 0}
+
+/* contact */
+.contact-box{background:linear-gradient(135deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:32px;padding:clamp(28px,5vw,60px);text-align:center;position:relative;overflow:hidden}
+.contact-box::before{content:"";position:absolute;inset:-30%;background:radial-gradient(circle at 20% 0%,rgba(245,152,157,.2),transparent 40%),radial-gradient(circle at 90% 100%,rgba(163,211,156,.18),transparent 40%)}
+.contact-box>*{position:relative}
+.contact-box h2{margin-inline:auto}
+.contact-box .lead{margin:0 auto 28px}
+.cl{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.plain{color:var(--muted);font-size:.9rem}
+footer{padding:30px 0 50px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.fill{transition:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand" aria-label="Soulive home">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="12" width="17" height="17" rx="5" transform="rotate(45 11.5 20.5)" fill="#F5989D" opacity=".95"/><rect x="12" y="12" width="17" height="17" rx="5" transform="rotate(45 20.5 20.5)" fill="#6DCFF6" opacity=".85"/><rect x="21" y="12" width="17" height="17" rx="5" transform="rotate(45 29.5 20.5)" fill="#A3D39C" opacity=".8"/></svg>
+      Soulive Media
+    </a>
+    <div class="links">
+      <a href="#results">Results</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a>
+    </div>
+    <a href="#contact" class="btn primary sm">Let's talk</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <div class="pill"><span class="dot"></span> Hyderabad, India · Open for new brands</div>
+      <h1>I take new brands from <span class="gtext">0 to 1000s.</span></h1>
+      <p class="sub">Hi, I'm <b style="color:var(--text)">Chaitanya Puchalapalli</b>, founder of <b style="color:var(--text)">Soulive Media</b>. I handle content strategy, shoots, editing, Meta ads, websites and automations end to end, and I've built Instagram pages and a YouTube channel from a standing start into real business.</p>
+      <div class="cta">
+        <a class="btn primary" href="#results">See the results</a>
+        <a class="btn ghost" href="#work">Watch my work</a>
+      </div>
+    </div>
+    <div class="hero-card rv" aria-hidden="true">
+      <div class="hc-top"><span>YouTube channel growth</span><span>subscribers</span></div>
+      <div class="big gtext"><span data-count="240" data-suffix="K+">0</span></div>
+      <svg viewBox="0 0 400 170" width="100%" style="margin-top:8px">
+        <defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#F5989D"/><stop offset=".55" stop-color="#6DCFF6"/><stop offset="1" stop-color="#A3D39C"/></linearGradient>
+        <linearGradient id="af" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6DCFF6" stop-opacity=".35"/><stop offset="1" stop-color="#6DCFF6" stop-opacity="0"/></linearGradient></defs>
+        <path d="M0 150 C60 146 110 140 160 120 S260 70 300 48 S370 14 400 8 L400 170 L0 170Z" fill="url(#af)"/>
+        <path id="gl" d="M0 150 C60 146 110 140 160 120 S260 70 300 48 S370 14 400 8" fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="400" cy="8" r="6" fill="#A3D39C"/>
+        <text x="4" y="168" fill="#9aa3c0" font-family="Outfit" font-size="12">40K</text>
+      </svg>
+      <div class="chip c1">Peak ad revenue <b>$12K/mo</b></div>
+      <div class="chip c2">Varna <b>0 → 20K</b></div>
+      <div class="chip c3">Inbyn <b>0 → 8.5K</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap strip-grid">
+    <div class="rv"><div class="n"><span data-count="240" data-suffix="K+">0</span></div><div class="l">YouTube subscribers (from 40K)</div></div>
+    <div class="rv"><div class="n"><span data-count="20" data-suffix="K">0</span></div><div class="l">Instagram · Varna Interiors</div></div>
+    <div class="rv"><div class="n"><span data-count="8.5" data-suffix="K" data-dec="1">0</span></div><div class="l">Instagram · Inbyn Design Studio</div></div>
+    <div class="rv"><div class="n"><span data-count="4.5" data-suffix="K" data-dec="1">0</span></div><div class="l">Instagram · WallTexz</div></div>
+  </div>
+</div>
+
+<section id="results">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Proof, not promises</span>
+    <h2>Growth I've built <span class="gtext">from scratch</span></h2>
+    <p class="lead">Every account below started at zero (or close to it). Here's where each one stands today.</p></div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="exp" id="experience">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Background</span>
+    <h2>My work <span class="gtext">experience</span></h2>
+    <p class="lead">Years of hands-on work across YouTube, Instagram, SEO and paid ads — leading teams and running multiple accounts at once.</p></div>
+    <div class="tl" id="tl"></div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Selected work</span>
+    <h2>See it, <span class="gtext">don't just read it</span></h2>
+    <p class="lead">Tap any piece to open the original on its platform.</p></div>
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" aria-selected="true" data-t="reels">Reels &amp; Shorts</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="posts">Social posts</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="arts">SEO articles</button>
+    </div>
+    <div id="gallery"></div>
+  </div>
+</section>
+
+<section class="exp" id="services">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">What I do</span>
+    <h2>One person, <span class="gtext">a full growth engine</span></h2>
+    <p class="lead">Content, ads and systems under one roof — so your brand doesn't juggle five freelancers.</p></div>
+    <div class="svc" id="svc"></div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">How I work</span>
+    <h2>Simple process, <span class="gtext">clear results</span></h2>
+    <p class="lead">I run multiple accounts with minimal oversight, and I build templates and workflows first so quality stays consistent as a brand grows.</p></div>
+    <div class="proc rv">
+      <div class="st"><h4>Listen</h4><p>Your business, niche, customers and goals — before a single post is planned.</p></div>
+      <div class="st"><h4>Strategy</h4><p>Content pillars, formats and a posting plan built around what your audience actually watches.</p></div>
+      <div class="st"><h4>Create</h4><p>Scripts, shoots, edits and designs — handled in one place, in your brand's look.</p></div>
+      <div class="st"><h4>Grow</h4><p>Organic reach plus Meta ads for qualified leads, tracked and improved every week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="zero">
+  <div class="wrap rv">
+    <div class="display gtext">0 → 1</div>
+    <p>Every number on this page was built from a standing start. Your brand could be next.</p>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-box rv">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's grow your brand</h2>
+      <p class="lead">Tell me about your business — I'll reply with a clear plan, not a sales pitch.</p>
+      <div class="cl">
+        <a class="btn primary" href="https://wa.me/917207237070" target="_blank" rel="noopener">WhatsApp me</a>
+        <a class="btn ghost" href="mailto:souliveenterprises@gmail.com">Email</a>
+        <a class="btn ghost" href="https://in.linkedin.com/in/chaitanya-puchalapalli" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="plain">souliveenterprises@gmail.com · +91 72072 37070</p>
+    </div>
+  </div>
+</section>
+
+<footer>© Chaitanya Puchalapalli · Soulive Media · Hyderabad, India</footer>
+
+<script>
+/* ============ EDIT YOUR CONTENT HERE ============ */
+const CLIENTS = [
+  {name:"YouTube channel", niche:"Tech content · led editing, content & shooting team", platform:"YouTube", from:"40K", to:"240K+", pct:100, accent:"#F5989D",
+   stats:[["$12K/mo","Peak ad revenue"],["6x","Subscriber growth"]], tags:["Scripting","Editing","Team lead"], wide:true},
+  {name:"Varna Interiors", niche:"Interior design · Hyderabad", platform:"Instagram", from:"0", to:"20K", pct:82, accent:"#6DCFF6",
+   stats:[["40–50","Leads / month"],["₹50–60L","Avg monthly revenue"]], tags:["Reels","Meta ads","Organic"]},
+  {name:"Inbyn Design Studio", niche:"Interior design", platform:"Instagram", from:"0", to:"8.5K", pct:50, accent:"#A3D39C",
+   stats:[["100%","Organic growth"],["Scratch","Built from zero"]], tags:["Reels","Carousels","Strategy"]},
+  {name:"WallTexz", niche:"Wall texture & finishes", platform:"Instagram", from:"0", to:"4.5K", pct:34, accent:"#F5989D",
+   stats:[["Scratch","Built from zero"],["Growing","Active client"]], tags:["Content","Strategy","Reels"]},
+  {name:"Fansan Fashion", niche:"Customised t-shirts brand", platform:"Instagram · just launched", from:"0", to:"Building", pct:14, accent:"#6DCFF6",
+   stats:[["New","Started recently"],["Custom","T-shirt brand"]], tags:["Brand building","Content"], live:true}
+];
+
+const EXPERIENCE = [
+  {when:"Present", role:"Founder · Content & Growth", org:"Soulive Media, Hyderabad", c:"#6DCFF6",
+   pts:["Run Instagram growth for multiple interior-design and local brands from zero","Meta ads for qualified leads, plus content strategy, shoots, editing and brand design","Built automation tools, websites and WhatsApp flows"]},
+  {when:"Earlier", role:"Team Leader · YouTube Channel", org:"Tech channel · 40K → 240K+ subscribers", c:"#F5989D",
+   pts:["Managed the editing team, content team and shoots end to end","Grew the channel to a peak of $12K/month in ad revenue","Built a second tech channel from scratch"]},
+  {when:"Earlier", role:"SEO Analyst", org:"6 months", c:"#A3D39C",
+   pts:["Keyword research, on-page SEO and long-form search-structured writing","Published buying guides and product reviews on ElectronicsHub.org"]}
+];
+
+const SERVICES = [
+  {t:"Content strategy", d:"Social media content strategy built around your niche, your customers and what they actually watch.", c:"#F5989D", i:"M12 2a7 7 0 00-4 12.7V18h8v-3.3A7 7 0 0012 2zM9 21h6"},
+  {t:"Social content & design", d:"Reusable brand templates so every account stays consistent: carousels, posters, stories and thumbnails.", c:"#6DCFF6", i:"M4 5h16v14H4zM4 15l5-5 4 4 3-3 4 4"},
+  {t:"Shoots", d:"Planned, scripted shoots for reels and YouTube, from the shot list to the final take.", c:"#A3D39C", i:"M3 7h13v10H3zM16 10l5-3v10l-5-3"},
+  {t:"Video editing", d:"Short-form scripting, editing and format testing for YouTube Shorts and Instagram Reels.", c:"#F5989D", i:"M5 4l14 8-14 8z"},
+  {t:"Meta ads", d:"Performance campaigns built to bring steady, qualified leads for local and service businesses.", c:"#6DCFF6", i:"M4 19V9M10 19V5M16 19v-8M22 19H2"},
+  {t:"SEO writing", d:"Search-structured long-form articles and service pages written in simple, human language.", c:"#A3D39C", i:"M5 4h14v16H5zM8 9h8M8 13h8M8 17h5"},
+  {t:"Automations", d:"Macro-driven Excel workbooks with branded exports, WhatsApp flows and outreach templates.", c:"#F5989D", i:"M13 2L4 14h7l-1 8 9-12h-7z"},
+  {t:"Brand systems", d:"Logo variants, typography and locked colour systems so every post looks like you.", c:"#6DCFF6", i:"M12 3a9 9 0 100 18 4 4 0 000-8 4 4 0 010-8M7 10h.01M9 6h.01M15 6h.01"},
+  {t:"Website building", d:"Clean, fast websites that show your work and turn visitors into enquiries.", c:"#A3D39C", i:"M3 4h18v16H3zM3 9h18M7 6.5h.01M10 6.5h.01"}
+];
+
+/* Add your own cover images: put files in an "assets" folder and set img:"assets/name.jpg" */
+const REELS = [
+  {t:"Reel 01", u:"https://youtube.com/shorts/5Si9A5TuZ1M", p:"YouTube Short", img:"https://img.youtube.com/vi/5Si9A5TuZ1M/hqdefault.jpg", g:["#F5989D","#6DCFF6"]},
+  {t:"Reel 02", u:"https://www.instagram.com/reel/DWtfp2LD8nE/", p:"Instagram Reel", g:["#6DCFF6","#A3D39C"]},
+  {t:"Reel 03", u:"https://www.instagram.com/reel/DasU3aChuyE/", p:"Instagram Reel", g:["#A3D39C","#F5989D"]},
+  {t:"Reel 04", u:"https://www.instagram.com/reel/DbImiCVTNmD/", p:"Instagram Reel", g:["#F5989D","#A3D39C"]}
+];
+const POSTS = [
+  {t:"Post 01", u:"https://www.instagram.com/p/DYn-cb9mHR9/", g:["#6DCFF6","#F5989D"]},
+  {t:"Post 02", u:"https://www.instagram.com/p/DcDIvK6PFG2/", g:["#A3D39C","#6DCFF6"]},
+  {t:"Post 03", u:"https://www.instagram.com/p/DZZ57hCjwla/", g:["#F5989D","#A3D39C"]}
+];
+const ARTICLES = [
+  {t:"Travel adapter — product review", c:"#F5989D"},
+  {t:"Best noise-cancelling headphones — buying guide", c:"#6DCFF6"},
+  {t:"Long-distance listening devices — buying guide", c:"#A3D39C"},
+  {t:"Wireless headsets with mic — buying guide", c:"#F5989D"},
+  {t:"Cat ear headphones — buying guide", c:"#6DCFF6"}
+];
+/* ================================================ */
+
+const $=s=>document.querySelector(s);
+const play='<svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M7 4l13 8-13 8z"/></svg>';
+const arrow='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>';
+
+/* growth cards */
+$("#cards").innerHTML = CLIENTS.map(c=>`
+<article class="gc rv ${c.wide?'wide':''}" style="--accent:${c.accent}">
+  <div class="platform">${c.platform}</div>
+  <h3>${c.name}</h3>
+  <div class="niche">${c.niche}</div>
+  <div class="fromto"><span class="a">${c.from}</span><span class="b">${c.to}</span></div>
+  <div class="track"><div class="fill" data-w="${c.pct}"></div></div>
+  <div class="kv">${c.stats.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join("")}</div>
+  <div>${c.tags.map(t=>`<span class="tag">${t}</span>`).join("")}${c.live?'<span class="live"><span class="dot"></span> Building now</span>':''}</div>
+</article>`).join("");
+
+/* experience */
+$("#tl").innerHTML = EXPERIENCE.map(e=>`
+<div class="tl-item rv" style="--c:${e.c}">
+  <div class="when">${e.when}</div><h3>${e.role}</h3><div class="org">${e.org}</div>
+  <ul>${e.pts.map(p=>`<li>${p}</li>`).join("")}</ul>
+</div>`).join("");
+
+/* services */
+$("#svc").innerHTML = SERVICES.map(s=>`
+<div class="sv rv" style="--c:${s.c}">
+  <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="${s.c}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="${s.i}"/></svg></div>
+  <h3>${s.t}</h3><p>${s.d}</p>
+</div>`).join("");
+
+/* gallery */
+function cover(w){return `<div class="cover" style="background:linear-gradient(150deg,${w.g[0]},${w.g[1]})">
+  <div class="t">${w.t}</div>${w.img?`<img src="${w.img}" alt="${w.t}" loading="lazy" onerror="this.remove()">`:''}</div>`}
+const VIEWS={
+  reels:()=>`<div class="grid reels">${REELS.map(w=>`<a class="work" href="${w.u}" target="_blank" rel="noopener" aria-label="Watch ${w.t}">
+    ${cover(w)}<span class="badge" style="color:#fff">${w.p}</span><span class="play">${play}</span>
+    <div class="meta"><b>${w.t}</b><span>Watch ↗</span></div></a>`).join("")}</div>`,
+  posts:()=>`<div class="grid posts">${POSTS.map(w=>`<a class="work" href="${w.u}" target="_blank" rel="noopener" aria-label="Open ${w.t}">
+    ${cover(w)}<span class="badge" style="color:#fff">Instagram</span><span class="play">${arrow}</span>
+    <div class="meta"><b>${w.t}</b><span>View ↗</span></div></a>`).join("")}</div>`,
+  arts:()=>`<div class="grid arts">${ARTICLES.map((a,i)=>`<div class="art" style="border-top:3px solid ${a.c}">
+    <div class="n" style="color:${a.c}">0${i+1}</div><h4>${a.t}</h4><small>Published on ElectronicsHub.org</small></div>`).join("")}</div>
+    <p class="note">Long-form, search-structured writing: keyword research, clear headings and honest buying advice.</p>`
+};
+function show(k){$("#gallery").innerHTML=VIEWS[k]();document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",b.dataset.t===k))}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest(".tab");if(b)show(b.dataset.t)});
+show("reels");
+
+/* reveal, counters, bars */
+function count(el){
+  const end=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),suf=el.dataset.suffix||"";
+  if(matchMedia("(prefers-reduced-motion:reduce)").matches){el.textContent=end.toFixed(dec)+suf;return}
+  const t0=performance.now(),d=1600;
+  (function f(t){const p=Math.min((t-t0)/d,1),e=1-Math.pow(1-p,3);el.textContent=(end*e).toFixed(dec)+(p===1?suf:"");if(p<1)requestAnimationFrame(f)})(t0);
+}
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  e.target.classList.add("in");
+  e.target.querySelectorAll(".fill").forEach(f=>f.style.width=f.dataset.w+"%");
+  e.target.querySelectorAll("[data-count]").forEach(count);
+  io.unobserve(e.target);
+}),{threshold:.2});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+document.querySelectorAll(".hero-card [data-count]").forEach(count);
+
+/* hero line draw */
+const gl=$("#gl");if(gl){const L=gl.getTotalLength();gl.style.strokeDasharray=L;gl.style.strokeDashoffset=L;gl.getBoundingClientRect();gl.style.transition="stroke-dashoffset 2s ease";requestAnimationFrame(()=>gl.style.strokeDashoffset=0)}
+</script>
+</body>
+</html>
